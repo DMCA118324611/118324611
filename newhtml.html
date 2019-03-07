@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blockchain</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<center><body>
+        
+        
+    
+<div class="top-container">
+  <h1>Scroll Down</h1>
+  <p>Scroll down to see the sticky effect.</p>
+</div>    
+
+<ul>
+  <li><a href="Consulting.html">Home</a></li> 
+  <li><a class="active" href="#home">Blockchain</a></li>
+  <li><a href="#news">Autonoumous things</a></li>
+  <li><a href="#contact">Consulting Services</a></li>
+</ul>
+        
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h1>About Blockchain</h1>
+  <br>
+  <p>A blockchain is a shared database that is managed by a global network of computers. Information held in the database is distributed and continually reconciled by the computers in the network. The computers are often referred to as nodes, miners, or peers. Whatever they’re called, the computers are creating and maintaining their blockchain by validating and transmitting entries. And entries are the data that is published by the users of the network.
+Often this data represents the movement of cryptocurrency from one user of the network to another user of the network.Most blockchains are not controlled by any single entity and do not have a single point of failure. All the entries are viewable by the whole network. When data is entered in a blockchain, it can’t be removed. It’s there forever.
+The innovation of blockchains that makes them different from a normal database is that they achieve agreement on the history by sharing and restricting the entries without a central server or authority.
+  <a href="https://www.blockchain.com/">Learn More about Blockchain here.</a></p>
+  <img src="Blockchain.jpeg" width ="500" height="400">
+  
+  
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>  
+    
+
+    </body></center>
+</html>

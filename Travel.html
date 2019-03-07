@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <style>
+    html{  background: url(sea.jpg) no-repeat center fixed; 
+  background-size: cover;}
+    
+    .collapsible {
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: inherit;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+            </style>
+    
+    <head>
+        <title>Travel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <center><body>
+        
+        <div class="col-lg-8 mx-auto text-center"></div>
+        <H1  style="background-color:lightgray;">Countries I have been to</H1>
+        <ol>
+             <button class="collapsible">Northern Ireland</button>
+         <div class="content">
+            <p>I have travelled to the north on numerous occasions, seeing sights such as the giants causeway.Belfast City is a great city with many attractions such as the Titanic Museum.
+            Another place which i enjoyed visiting was the Ulster-American Folk park, due to my interest in History.</p>
+            
+            <img src="Titanic.jpg" width ="400" height="400"> <img src="Antrim.jpg" width ="400" height="400">
+         </div>
+            <br>
+            <hr>
+            <button class="collapsible">Wales</button>
+         <div class="content">
+            <p>I travelled through wales when i was travelling to Manchester, I admired the beautiful scenery</p>
+            <p>We arrived in HolyHead and went paintballing</p>
+            <img src="Wales.jpg" width ="400" height="400"> <img src="Paintballing.jpg" width ="400" height="400">
+         </div>
+            <br>
+            <hr>
+            <button class="collapsible">England</button>
+         <div class="content">
+            <p>I have been to england 3 times. I have travelled to places such as Devon & Cornwall, St.Ive's, Manchester and London. When i was in First year me and my classmates
+            travelled to Manchester to see Man United play against Q.P.R . It was a fantastic day made even better when United beat Q.P.R 3 - 1. I also travelled to London With my friends in October 2018. We saw landmarks such as Tower Bridge, The tower of London and Big Ben. We
+            also went and saw the Los Angeles Chargers play the Tennessee Titans in Wembley Stadium, which was a fantastic experience.</p>
+            <img src="2-London.jpg" width ="400" height="400"> <img src="Manchester.jpg" width ="400" height="400"> 
+         </div>
+            <br>
+            <hr>
+             <button class="collapsible">France</button>
+         <div class="content">
+            <p>I have been to France twice. My grand aunt owns a house in the south of France, in the town of Colliure. The scenery there is breathtaking, being below the pyrennes mountains
+            and being situated on the coast, which hosts numerous beautiful beaches. We also visited the castle at Carcassone. It is a perfectly preserved medieval town in the south of France.
+            We were lucky enough to witness a medieval jousting tournament. Inside the walls of the castle there is many medieval themed shops and restaurant's.
+            You could also visit the perfectly preserved castle armoury and Throne room.</p>
+            <img src="France.jpg" width ="400" height="400"> <img src="Carcassone.jpg" width ="400" height="400">
+         </div>
+            <br>
+            <hr>
+             <button class="collapsible">Spain</button>
+         <div class="content">
+            <p>I have been to Spain on numerous occasions. My family and I usually travel up towards the north of Spain in the Catalan regions. There are many beautiful beaches located there
+            with breathtaking scenery. It is located on the Costa brava (rocky coast) which gives rise to beautiful sea cliffs and rugged landscapes. 
+            I have also visited Barcelona and Madrid whilst in Spain. Madrid is the most memorable city i have ever visited. It is bursting with culture and has 
+            plenty to see and do such as the Santiago Bernabeau, Madrid Bullring, Toledo, The retiro park and the nighttime atmosphere in the place de sol. </p>
+            <img src="Tamariu.jpg" width ="400" height="400"> <img src="Madrid.jpg" width ="400" height="400">
+         </div>
+            <br>
+            <hr>
+             <button class="collapsible">Portugal</button>
+         <div class="content">
+            <p>I visited portugal once with my family. We stayed in the town of Villamoura. Portugal is a beautiful country which hosts beautiful weather and scenery.
+            The Portugese also make beautiful food particulary the meat and steak dishes they prepare. There was a beach near us where we could participate in various 
+            water activities or relax if we felt like it.</p>
+            <img src="vilamoura.jpg" width ="400" height="400"> <img src="Portugal.jpg" width ="400" height="400">
+         </div>
+        
+        
+        
+        <H1  style="background-color:lightgray;">Countries I would like to visit</h1>
+        <button class="collapsible">The U.S.A</button>
+         <div class="content">
+        <P>I would love to visit the U.S.A in the next few years as it is a vast and beautiful country. I would first like to visit my relatives in Boston and then
+        proceed to travel around the U.S and see as much as I can. I would love to see the major cities such as New York City, Chicago, Los Angeles and San Fransisco
+        and of course, Las Vegas. I would also like to travel Route 66, which would give me a chance to take in the beautiful American countryside.</P>
+         <img src="66.jpg" width ="400" height="400"> <img src="Liberty2.jpg" width ="400" height="400">
+         </div>
+         <br>
+         <hr>
+    
+        <button class="collapsible">Japan</button>
+         <div class="content">
+        <P>I have a great interest in visiting the nation of Japan. I am fascinated by The samurai and Japan's exciting history. The Samurai are unique and
+        beautiful works of architecture which i would love to see. Many museums in Japan have a wide display of Samurai weapons
+        and armour. Japan is also one of the most technologically developed countries in the world, which can be showcased by Japan's
+        capital city, Tokyo. This is one of the most energetic and futuristic cities in the world.</P>
+         <img src="Tokyo.jpg" width ="400" height="400"> <img src="Samurai.jpg" width ="400" height="400">
+         </div>
+         
+         
+         <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body></center>
+</html>
